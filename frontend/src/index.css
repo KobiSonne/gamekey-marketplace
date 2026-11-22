@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-eneba-canvas: #4618AC;
+  --color-eneba-dark: #1F0A4D;
+  --color-eneba-surface: #2A1163;
+  --color-eneba-border: #3F1B85;
+  --color-eneba-yellow: #FAD318;
+  --color-eneba-yellowHover: #E5BE0B;
+  --color-eneba-orange: #FD5A20;
+  --color-eneba-aquamarine: #63E3C2;
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #1F0A4D;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', Inter, sans-serif;
+  }
+}
+
+/* Custom scrollbar for horizontal carousels */
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1F0A4D;
+}
+::-webkit-scrollbar-thumb {
+  background: #3F1B85;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4618AC;
+}
